@@ -30,6 +30,11 @@ Jim Tuccillo August 1999
 #include <errno.h>
 #include <sys/resource.h>
 #endif
+#ifdef __CYGWIN__
+#include <errno.h>
+#include <sys.resource.h>
+#include <sys/times.h>
+#endif
 
 /* #include "trace_mpif.h" */
 
